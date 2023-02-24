@@ -1,0 +1,21 @@
+{
+  "name": "klevu/module-sync-custom-product-type",
+  "version": "1.0.0",
+  "description": "By doing, it will sync custom product type mentioned in the plugin.",
+  "type": "magento2-module",
+  "require": {
+    "magento/framework": "*",
+    "klevu/module-productsearch": "3.2.*"
+  },
+  "license": [
+    "Massachusetts Institute of Technology License (MITL)"
+  ],
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Klevu\\SyncCustomProductType\\": ""
+    }
+  }
+}
