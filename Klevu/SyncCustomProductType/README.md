@@ -16,9 +16,8 @@ For information about a module installation in Magento 2, see [Enable or disable
 
 ## Usage
 
-1. Open * [Plugin\Product\ProductIndividualPlugin.php](Plugin\Product\ProductIndividualPlugin.php)
-
-2. Change the product type to your own product type
+* Open [Plugin/Product/ProductIndividualPlugin.php](Plugin/Product/ProductIndividualPlugin.php)
+* Change the product type to your own product type
 
 
 ## Notes

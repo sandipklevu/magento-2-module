@@ -16,17 +16,16 @@ For information about a module installation in Magento 2, see [Enable or disable
  
 ## Usage
 
-1. Open * [Model/Product/LoadAttribute.php](Model/Product/LoadAttribute.php)
+* Open [Model/Product/LoadAttribute.php](Model/Product/LoadAttribute.php)
+* Find the below override samples:
 
-2. Find the below override samples
+Where `$parent` is parent object in configurable product while `$item` is product object for all the other type of products.
 
-where `$parent` is parent object in configurable product while `$item` is product object for all the other type of products.
+	`$product['otherAttributeToIndex']['some_new_attribute'] = 'A Value';`
 
-`$product['otherAttributeToIndex']['some_new_attribute'] = 'A Value';`
+	`$product['imageHover'] = "https://website.com/somehoverurl.png";`
 
-`$product['imageHover'] = "https://website.com/somehoverurl.png";`
-
-`$product['stock_promotional_label'] = "On Sale";`
+	`$product['stock_promotional_label'] = "On Sale";`
 
 3. Make respective changes to the code.
 
