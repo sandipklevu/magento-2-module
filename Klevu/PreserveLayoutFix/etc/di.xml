@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <type name="Amasty\Shopby\ViewModel\Navigation\Toolbar">
+        <plugin name="Klevu_Amasty::PLFix_2_19_3" type="Klevu\PreserveLayoutFix\Plugin\ViewModel\Navigation\Toolbar" />
+    </type>
+
+
+</config>
