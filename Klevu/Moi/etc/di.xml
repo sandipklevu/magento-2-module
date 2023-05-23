@@ -1,0 +1,26 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!--
+        We will use the existing condition from the Klevu_Search module to ensure
+        that our changes to the frontend search options only take place when the
+        relevant configuration is enabled
+    -->
+    <type name="Klevu\Moi\Service\InteractiveOptionsProvider">
+        <arguments>
+            <argument name="isEnabledCondition" xsi:type="object">Klevu\Search\Service\ThemeV2\IsEnabledCondition</argument>
+        </arguments>
+    </type>
+
+    <type name="Klevu\FrontendJs\Service\InteractiveOptionsGenerator">
+        <arguments>
+            <argument name="interactiveOptionsProviders" xsi:type="array">
+                <!--
+                    Register our overrides to search power-up configuration
+                -->
+                <item name="klevu_theme_moi_search" xsi:type="object">Klevu\Moi\Service\InteractiveOptionsProvider</item>
+            </argument>
+        </arguments>
+    </type>
+</config>

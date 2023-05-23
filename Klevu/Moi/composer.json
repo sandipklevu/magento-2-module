@@ -1,0 +1,22 @@
+{
+    "name": "klevu/module-moi",
+    "version": "1.0.0",
+    "description": "Init MOI to Magento",
+    "type": "magento2-module",
+    "require": {
+        "magento/framework": "*",
+        "klevu/module-frontend-js": "2.1.*",
+        "klevu/module-productsearch": "3.3.*"
+    },
+    "license": [
+        "Proprietary"
+    ],
+    "autoload": {
+        "files": [
+            "registration.php"
+        ],
+        "psr-4": {
+            "Klevu\\Moi\\": ""
+        }
+    }
+}
