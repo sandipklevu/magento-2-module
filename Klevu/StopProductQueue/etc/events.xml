@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="catalog_product_save_commit_after">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+        <observer name="catalog_product_media_save_before_event" disabled="true"/>
+        <observer name="klevu_search_product_sync_updatelastsyncdate" disabled="true"/>
+    </event>
+    <event name="after_reindex_process_catalog_category_product">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="after_reindex_process_catalog_product_price">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="after_reindex_process_catalog_url">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="cataloginventory_stock_item_save_commit_after">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="catalog_product_delete_commit_after">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="category_move">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="sales_order_save_commit_after">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="catalog_entity_attribute_save_after">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="catalog_product_attribute_update_before">
+        <observer name="klevu_search_product_sync" disabled="true"/>
+    </event>
+    <event name="catalog_category_change_products">
+        <observer name="klevu_search_categroy_product_sync" disabled="true"/>
+    </event>
+    <event name="review_save_after">
+        <observer name="ratingsUpdate" disabled="true"/>
+    </event>
+    <event name="review_delete_after">
+        <observer name="ratingsDelete" disabled="true"/>
+    </event>
+    <event name="catalogrule_rule_save_commit_after">
+        <observer name="RuleUpdate" disabled="true"/>
+    </event>
+    <event name="catalogrule_rule_delete_before">
+        <observer name="RuleUpdate" disabled="true"/>
+    </event>
+    <event name="catalog_category_save_before">
+        <observer name="updateLastSyncCategoryBefore" disabled="true"/>
+    </event>
+    <event name="catalog_category_save_commit_after">
+        <observer name="updateLastSyncCategory" disabled="true"/>
+    </event>
+
+</config>
